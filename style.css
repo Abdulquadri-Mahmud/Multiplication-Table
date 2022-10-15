@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+body {
+  background: linear-gradient(to top right,rgb(234, 203, 29) 50%,rgb(23, 23, 133) 0%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height:85vh;
+}
+@media screen and (min-width:500px){
+  body{
+  background: linear-gradient(to top right,rgb(234, 203, 29) 50%,rgb(23, 23, 133) 0%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height:150vh;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+}
+.mult_cont {
+  height: 410px;
+  width: 300px;
+  background-image: linear-gradient(
+    to top left,
+    rgb(234, 203, 29) 50%,
+    rgb(23, 23, 133) 0%
+  );
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: inset -4px -4px 10px rgb(110, 96, 18), 4px 4px 10px rgb(5, 5, 179);
+  border-radius: 14px;
+}
+.viewContentCont {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.viewContent {
+  height: 170px;
+  width: 220px;
+  background-color: rgb(198, 172, 23);
+  border-radius: 113px;
+  box-shadow: inset -4px -4px 10px rgb(110, 96, 18), inset 4px 4px 10px gold;
+  color: black;
+  overflow-y: auto;
+  text-align: center;
+  padding: 13px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+p.display_error {
+  text-align: center;
+  color: red;
+  font-size: 15px;
+  font-weight: bolder;
+  display: none;
+  animation: blinkError 0.2s linear alternate 3;
+}
+@keyframes blinkError {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.input_text_cont {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 210px;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    to top right,
+    rgb(23, 23, 133) 50%,
+    rgb(234, 203, 29) 0%
+  );
+}
+.input_text > input {
+  height: 20px;
+  width: 180px;
+  background-color: black;
+  color: rgba(212, 159, 159);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 3px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.input_text > ::placeholder {
+  text-align: center;
+  color: rgba(212, 159, 159);
+  font-size: 14px;
+  font-weight: bolder;
+}
+.button_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 210px;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    to top left,
+    rgb(23, 23, 133) 50%,
+    rgb(234, 203, 29) 0%
+  );
+}
+.button > button {
+  border:none;
+  outline: none;
+  height: 30px;
+  width: 80px;
+  border-radius: 6px;
+  margin: 6px;
+  background-color: black;
+  color: rgba(212, 159, 159);
+  font-size: 17px;
+  font-weight: bolder;
+}
